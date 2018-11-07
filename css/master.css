@@ -12,7 +12,7 @@ header {
   background-size: cover;
   padding-top: 5px;
   width: auto;
- height: 50vh;
+  max-height: 90vh;
 }
 
 header h1 {
@@ -54,7 +54,7 @@ header li a {
 }
 
 section {
-  height: 90vh;
+  min-height: 100vh;
 }
 
 section.first-fable {
@@ -88,18 +88,12 @@ color: #663509;
 section.second-fable {
   background-color : rgba(176, 132, 79, 0.5);
   background-size: cover;
-  width: auto;
-  padding: 15%;
   display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
+  justify-content: center;
 }
 
 .second-text {
   text-align: right;
-  font-size: 20px;
-  justify-content: center;
-  order: 1;
 }
 .second-text h1 {
 font-family: 'Cinzel Decorative', cursive;
@@ -108,7 +102,8 @@ font-weight: 400;
 .second-text p {
     text-align: justify;
   font-family: 'Vidaloka', serif;
-  padding-left: 30px;
+  font-size: 20px;
+  max-width: 600px;
 }
 
 .image-block {
@@ -154,7 +149,6 @@ font-weight: bold;
 section.fourth-class {
   background-color : rgba(186, 102, 79, 0.5);
   background-size: cover;
-  width: auto;
   display:flex;
   justify-content: center;
 }
@@ -162,7 +156,6 @@ section.fourth-class {
 .fourth-text {
   font-size: 25px;
   text-align: right;
-  margin: 15%;
 }
 .fourth-text h1 {
   font-family: 'Aladin', cursive;
@@ -174,32 +167,33 @@ section.fourth-class {
 }
 
 section.fifth-class {
-  width : auto;
-  padding : 15%;
-  display: flex;
-  align-items: flex-end;
-
+ display: flex;
+ justify-content: center;
 }
 
 .fifth-text {
-  font-size: 20px;
-  order: 1;
-  max-width: 1000px;
-  flex-grow: 1;
+  flex-basis: 480px;
 }
+
+.image {
+  flex-basis: 480px;
+}
+
 .fifth-text h1 {
   font-family: 'Great Vibes', cursive;
+  font-size: 30px;
 }
 .fifth-text p {
   text-align: justify;
   font-family: 'Cormorant Garamond', serif;
+  font-size: 16px;
 }
 
-.image {
-  order: 2;
-  flex-grow: 1.5;
-  justify-content: flex-end;
-
+.content-wrapper {
+  width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 img {
